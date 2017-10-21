@@ -1,0 +1,24 @@
+.courseInCart{
+    width: 90%;
+    margin-bottom: 10px;
+    color: red;
+}
+.linkElement{
+    color: black;
+}
+
+#buttonCharge{
+    border-radius: 4px;
+    display: block;
+    width: 90%;
+    margin-left: 18px;
+    margin-right: 20px;
+    background: #ff7816;
+    border: 0px ;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+}
