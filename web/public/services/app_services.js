@@ -6,158 +6,43 @@ $(document).ready(function () {
     CKEDITOR.replaceClass = 'ckeditor';
 
 
-
-    $('.active_checkbox').on('switchChange.bootstrapSwitch', function (event, state) {
-        var checkbox_id = $(this).val();
-        console.log('url:', 'admin/actions/' + checkbox_id + '/updateAjax');
-        $.ajax({
-            url: '/api/admin/actions/' + checkbox_id + '/updateActiveAttribute',
-            type: 'PATCH',
-            data: {
-                id: checkbox_id
-            },
-            success: function (response) {
-                console.log('Request success', response);
-            },
-            error: function (response) {
-                console.log('Request error', response);
-            }
-        });
-    });
-
-    $('.check-all-row').on('ifClicked',function (event) {
-        var groupId = $(this).val();
-        var url;
-        var checked = $(this).parent('[class*="icheck"]').hasClass("checked");
-        if (!checked) {
-            url = '/api/admin/groups/syncGroupMenuRelation?action=GROUP_CHECK_ALL'
-        } else{
-            url = '/api/admin/groups/syncGroupMenuRelation?action=GROUP_UNCHECK_ALL'
-        }
-
-        startAjaxLoading();
-
-        $.ajax({
-
-            url: url,
-            type: 'POST',
-            data: {
-                group_id: groupId,
-            },
-            success: function(response)
-            {
-                endAjaxLoading();
-                console.log('Check all success',response);
-            },
-            error: function (response) {
-                endAjaxLoading();
-                console.log('Request error',response);
-            }
-        });
-
-    })
-
-    $('.check-all-col').on('ifClicked',function (event) {
-        var tableId = $(this).val().split('-')[0];
-        var actionId = $(this).val().split('-')[1];
-        var url;
-        var checked = $(this).parent('[class*="icheck"]').hasClass("checked");
-        if (!checked) {
-            url = '/api/admin/groups/syncGroupMenuRelation?action=ACTION_CHECK_ALL'
-        } else{
-            url = '/api/admin/groups/syncGroupMenuRelation?action=ACTION_UNCHECK_ALL'
-        }
-
-        startAjaxLoading();
-
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: {
-                action_id: actionId,
-                table_id: tableId,
-            },
-            success: function(response)
-            {
-                endAjaxLoading();
-                console.log('Check all success',response);
-            },
-            error: function (response) {
-                endAjaxLoading();
-                console.log('Request error',response);
-            }
-        });
-    })
-
-    $('.check-all-table').on('ifClicked',function (event) {
-        var tableId = $(this).val();
-        var url;
-        var checked = $(this).parent('[class*="icheck"]').hasClass("checked");
-        if (!checked) {
-            url = '/api/admin/groups/syncGroupMenuRelation?action=TABLE_CHECK_ALL'
-        } else{
-            url = '/api/admin/groups/syncGroupMenuRelation?action=TABLE_UNCHECK_ALL'
-        }
-
-        startAjaxLoading();
-
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: {
-                table_id: tableId,
-            },
-            success: function(response)
-            {
-                endAjaxLoading();
-                console.log('Check all success',response);
-            },
-            error: function (response) {
-                endAjaxLoading();
-                console.log('Request error',response);
-            }
-        });
-    })
-
-    $('.group_menu_checkbox').on('ifClicked',function (event) {
-        var groupId = $(this).val().split('-')[0];
-        var tableId = $(this).val().split('-')[1];
-        var actionId = $(this).val().split('-')[2];
-        var url;
-        var checked = $(this).parent('[class*="icheck"]').hasClass("checked");
-
-        if (!checked) {
-            url = '/api/admin/groups/syncGroupMenuRelation?action=ADD_SINGLE'
-        } else{
-            url = '/api/admin/groups/syncGroupMenuRelation?action=REMOVE_SINGLE'
-        }
-
-        startAjaxLoading();
-
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: {
-                group_id: groupId,
-                table_id: tableId,
-                action_id: actionId
-            },
-            success: function(response)
-            {
-                endAjaxLoading();
-                console.log('Request success',response);
-            },
-            error: function (response) {
-                endAjaxLoading();
-                console.log('Request error',response);
-            }
-        });
-    })
-
     onlySelectOne('checkboxOnlySelectOne');
     checkBoxAll();
+    addDescription();
+    removeDescription();
 });
 
+
+function addDescription(){
+    $("#clickAddDescription").click(function(){
+        var order = parseInt($(this).attr('order'))  ;
+        var classDiv = '"elementAdd form-group col-sm-12 order'+order+'"';
+        var nameInput = '"description['+order+']"';
+        var description = 'Mô tả '+order;
+        var html = '<div class='+classDiv+'>'
+            +'<label for="description">'+description+'</label>'
+            +'<input class="form-control" name='+nameInput+' type="text">'
+            +'</div>';
+        $(html).insertBefore('.addDescription');
+        $(this).attr('order',order+1);
+        $('#clickRemoveDescription').attr('order',parseInt($('#clickRemoveDescription').attr('order'))+1);
+    });
+}
+
+function removeDescription() {
+    $("#clickRemoveDescription").click(function(){
+        var elements = $('.elementAdd');
+        if(elements.length>0){
+            var order = parseInt($(this).attr('order'));
+            $('.order'+order).remove();
+            $(this).attr('order',order-1);
+            $('#clickAddDescription').attr('order',parseInt($('#clickAddDescription').attr('order'))-1);
+        }
+        else{
+            alert('Có duy nhất 1 mô tả. Không thể xóa !');
+        }
+    });
+}
 
 function onlySelectOne(className) {
     var allCheckBox = $('input[type="checkbox"].'+className);

@@ -109,7 +109,8 @@
 
     <form class="register-form" method="post" action="{!! url('/register') !!}">
 
-        {!! csrf_field() !!}
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
         <div class="form-title">
             <span class="form-title">Sign Up</span>
         </div>

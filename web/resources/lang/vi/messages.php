@@ -57,6 +57,11 @@ return [
     "price" => "Giá",
     "active"=>"Active",
     "search_phone_number"=>"Nhập số điện thoại",
+    "san_pham_saved"=>"Thêm mới thành công một sản phẩm",
+    "san_pham_updated"=>"Cập nhật thành công thông tin sản phẩm",
+    "san_pham_not_found"=>"Không tìm thấy sản phẩm",
+    "no_select_category"=>"Chọn Danh Mục",
+    "san_pham_deleted"=>"Xóa thành công sản phẩm",
 
     // END
 

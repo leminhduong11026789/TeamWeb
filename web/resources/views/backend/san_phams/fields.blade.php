@@ -24,7 +24,7 @@
                     <span class="fileinput-exists"> @lang('messages.change') </span>
                     @if(isset($sanPham))
                         @if(isset($sanPham->anh))
-                            <input name="image_title" type="file" href="{{$sanPham->anh}}">
+                            <input name="anh" type="file" href="{{$sanPham->anh}}">
                         @else
 
                         @endif
@@ -45,10 +45,43 @@
 </div>
 
 <!-- Description Field -->
-<div class="form-group col-sm-12">
-    {!! Form::label('description', 'Mô tả') !!}
-    {!! Form::text('description', null, ['class' => 'form-control']) !!}
-</div>
+@if(isset($sanPham))
+    @foreach($allDescription as $description)
+        @if($description->order == 1)
+            <div class="form-group col-sm-12">
+                {!! Form::label('description', 'Mô tả 1') !!}
+                {!! Form::text('description[1]', $description->content, ['class' => 'form-control']) !!}
+            </div>
+        @else
+            <div class="elementAdd form-group col-sm-12 order{{$description->order}}">
+                {!! Form::label('description', 'Mô tả '.$description->order) !!}
+                {!! Form::text('description['. $description->order .']', $description->content, ['class' => 'form-control']) !!}
+            </div>
+        @endif
+    @endforeach
+    <div class="form-group col-sm-6 addDescription" >
+        <label id="clickAddDescription" order="{{count($allDescription)+1}}" style="cursor: pointer; cursor: hand;"><i class="fa fa-plus-circle"></i><b> Thêm Mô Tả</b></label>
+    </div>
+
+    <div class="form-group col-sm-6 removeDescription">
+        <label id="clickRemoveDescription" order="{{count($allDescription)}}" style="cursor: pointer; cursor: hand; float: right;"><i class="fa fa-minus-circle"></i><b> Xóa một mô tả</b></label>
+    </div>
+@else
+    <div class="form-group col-sm-12">
+        {!! Form::label('description', 'Mô tả 1') !!}
+        {!! Form::text('description[1]', null, ['class' => 'form-control']) !!}
+    </div>
+    <div class="form-group col-sm-6 addDescription" >
+        <label id="clickAddDescription" order="2" style="cursor: pointer; cursor: hand;"><i class="fa fa-plus-circle"></i><b> Thêm Mô Tả</b></label>
+    </div>
+
+    <div class="form-group col-sm-6 removeDescription">
+        <label id="clickRemoveDescription" order="1" style="cursor: pointer; cursor: hand; float: right;"><i class="fa fa-minus-circle"></i><b> Xóa một mô tả</b></label>
+    </div>
+@endif
+
+
+
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

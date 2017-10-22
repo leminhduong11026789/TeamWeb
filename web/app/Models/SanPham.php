@@ -24,7 +24,6 @@ class SanPham extends Model
     public $fillable = [
         'ten',
         'danh_muc_id',
-        'description',
         'url',
         'anh',
         'slug'
@@ -38,7 +37,6 @@ class SanPham extends Model
     protected $casts = [
         'ten' => 'string',
         'danh_muc_id' => 'integer',
-        'description' => 'string',
         'url' => 'string',
         'anh' => 'string',
         'slug' => 'string'
@@ -50,8 +48,7 @@ class SanPham extends Model
      * @var array
      */
     public static $rules = [
-        'ten' => 'required|max:255',
-        'description' => 'max:500'
+        'ten' => 'required|max:255'
     ];
 
     /**

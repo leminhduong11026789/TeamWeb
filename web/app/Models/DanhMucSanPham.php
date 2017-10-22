@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Eloquent as Model;
 use Cviebrock\EloquentSluggable\Sluggable;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class DanhMucSanPham
@@ -13,7 +12,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class DanhMucSanPham extends Model
 {
-    use SoftDeletes;
 
     public $table = 'danh_muc_san_phams';
     

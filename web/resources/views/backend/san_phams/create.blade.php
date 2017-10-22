@@ -25,7 +25,8 @@
                 <div class="portlet-body form">
                     <div class="row">
                         {!! Form::open(['route' => 'admin.sanPhams.store','id'=>'form_san_pham_create','enctype'=>'multipart/form-data']) !!}
-                        @include('backend.san_phams.fields')
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            @include('backend.san_phams.fields')
                         {!! Form::close() !!}
                     </div>
                 </div>
@@ -45,7 +46,7 @@
                     <div class="input-group">
                         <div class="icheck-list">
                             @foreach($categories as $category)
-                                <label><input type="checkbox" name="category_ids[]" value="{{ $category->id }}" form="form_motel_create" class="icheck checkboxOnlySelectOne"> {{$category->ten}} </label>
+                                <label><input type="checkbox" name="category_ids[]" value="{{ $category->id }}" form="form_san_pham_create" class="icheck checkboxOnlySelectOne"> {{$category->ten}} </label>
                             @endforeach
                         </div>
                     </div>

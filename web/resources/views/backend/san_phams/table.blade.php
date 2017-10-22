@@ -6,7 +6,7 @@
     </th>
     <th class="center">@lang('messages.san_pham_ten')</th>
     <th class="center">@lang('messages.san_pham_danh_muc')</th>
-    <th class="center">@lang('messages.san_pham_mo_ta')</th>
+{{--    <th class="center">@lang('messages.san_pham_mo_ta')</th>--}}
     <th class="center">@lang('messages.san_pham_url')</th>
     <th class="center">@lang('messages.san_pham_anh')</th>
     <th class="center" style="width: 100px">@lang('messages.action')</th>
@@ -23,9 +23,13 @@
                 <td class="center"><input type="checkbox" name="ids[]" value="{{ $sanPham->id }}" class="icheck check-single" form="items" /></td>
                 <td>{!! $sanPham->ten !!}</td>
                 <td>{!! $sanPham->danh_muc_id !!}</td>
-                <td>{!! $sanPham->description !!}</td>
-                <td>{!! $sanPham->url !!}</td>
-                <td>{!! $sanPham->anh !!}</td>
+{{--                <td>{!! $sanPham->description !!}</td>--}}
+                <td><a href="{!! $sanPham->url !!}">Xem</a></td>
+                @if(empty($sanPham->anh))
+                    <td></td>
+                @else
+                    <td><img src="{!! $sanPham->anh !!}" height="50px"></td>
+                @endif
                 <td class="center">
                     {!! Form::open(['route' => ['admin.sanPhams.destroy', $sanPham->id], 'method' => 'delete']) !!}
                     <div class="clearfix">

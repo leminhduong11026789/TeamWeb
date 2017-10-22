@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Eloquent as Model;
 
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class MoTaSanPham
@@ -13,7 +12,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class MoTaSanPham extends Model
 {
-    use SoftDeletes;
 
     public $table = 'mo_ta_san_phams';
     
