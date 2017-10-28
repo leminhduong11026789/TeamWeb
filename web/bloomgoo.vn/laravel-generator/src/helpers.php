@@ -313,6 +313,22 @@ if (! function_exists('formatPrice')) {
     }
 }
 
+if (! function_exists('convertPrice')) {
+    function convertPrice($price){
+       if($price>=1000000){
+           $p = $price/1000000;
+           return $p.' triệu';
+       }
+       elseif ($price>=100000){
+           $p = $price/100000;
+           return $p.' nghìn';
+       }
+       else{
+           return $price.'đ';
+       }
+    }
+}
+
 if (! function_exists('makeLinks')) {
     function makeLinks($str)
     {

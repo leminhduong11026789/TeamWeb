@@ -39,7 +39,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				
-				<a class="navbar-brand hidden-lg" href="/"><img src="images/logo.png" alt="Your Logo"></a>
+				<a class="navbar-brand hidden-lg" href="/"><img src="/frontend/images/logo.png" alt="Your Logo"></a>
 
 				<div class="nav-collapse collapse navbar-responsive-collapse">
 					<ul class="nav navbar-nav">
@@ -143,37 +143,37 @@
 				<div class="box-info-web">
 					<ul>
 						<li class="active">
-							<img src="img/shirt1.png" alt="">
+							<img src="/frontend/img/shirt1.png" alt="">
 							<a href="">Website Bán Hàng</a>
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</li>
 						<li>
-							<img src="img/shirt1.png" alt="">
+							<img src="/frontend/img/shirt1.png" alt="">
 							<a href="">Website Bán Mỹ Phẩm</a>
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</li>
 						<li>
-							<img src="img/shirt1.png" alt="">
+							<img src="/frontend/img/shirt1.png" alt="">
 							<a href="">Website Bán Quần Áo</a>
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</li>
 						<li>
-							<img src="img/shirt1.png" alt="">
+							<img src="/frontend/img/shirt1.png" alt="">
 							<a href="">Website Bán Giầy Dép</a>
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</li>
 						<li>
-							<img src="img/shirt1.png" alt="">
+							<img src="/frontend/img/shirt1.png" alt="">
 							<a href="">Website Bán Điện Thoại</a>
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</li>
 						<li>
-							<img src="img/shirt1.png" alt="">
+							<img src="/frontend/img/shirt1.png" alt="">
 							<a href="">Website Bán Đồ Chơi</a>
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</li>
 						<li>
-							<img src="img/shirt1.png" alt="">
+							<img src="/frontend/img/shirt1.png" alt="">
 							<a href="">Website Nội Thất</a>
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</li>
@@ -213,19 +213,19 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-									<img src="img/1sl.png" alt="img1">
+									<img src="/frontend/img/1sl.png" alt="img1">
 									<div class="carousel-caption">
 										Hay tin chung toi 
 									</div>
 								</div>
 								<div class="item">
-									<img src="img/2sl.jpg" alt="img2">
+									<img src="/frontend/img/2sl.jpg" alt="img2">
 									<div class="carousel-caption">
 										VUon toi uoc mo that su
 									</div>
 								</div>
 								<div class="item">
-									<img src="img/3sl.png" alt="img3">
+									<img src="/frontend/img/3sl.png" alt="img3">
 									<div class="carousel-caption">
 										VUon toi uoc mo that su
 									</div>
@@ -246,7 +246,7 @@
 					<div class="col-sm-4 form-introduce">
 						<div class="text-hello">
 							<a href="">
-								<img src="img/info.png" alt="">
+								<img src="/frontend/img/info.png" alt="">
 							</a>
 							<p>Xin chào, bạn !</p>
 							<p>Chúng tôi sẽ giúp bạn phát triển của mình. Hãy tin chúng tôi</p>
@@ -262,7 +262,7 @@
 					<div class="col-sm-12 form-col-sm12">
 						<div class="form-slide-much">
 							<div class="col-sm-2">
-								<img src="img/giay.jpg" alt="">
+								<img src="/frontend/img/giay.jpg" alt="">
 								<div class="text">
 									<p>Giá 1.000.000đ</p>
 									<p>Website bán hàng</p>
@@ -270,7 +270,7 @@
 								</div>
 							</div>
 							<div class="col-sm-2">
-								<img src="img/aodep1.jpg" alt="">
+								<img src="/frontend/img/aodep1.jpg" alt="">
 								<div class="text">
 									<p>Giá 1.000.000đ</p>
 									<p>Website bán hàng</p>
@@ -278,7 +278,7 @@
 								</div>
 							</div>
 							<div class="col-sm-2">
-								<img src="img/aodep.jpg" alt="">
+								<img src="/frontend/img/aodep.jpg" alt="">
 								<div class="text">
 									<p>Giá 1.000.000đ</p>
 									<p>Website bán hàng</p>
@@ -286,7 +286,7 @@
 								</div>
 							</div>
 							<div class="col-sm-2">
-								<img src="img/aodep.jpg" alt="">
+								<img src="/frontend/img/aodep.jpg" alt="">
 								<div class="text">
 									<p>Giá 1.000.000đ</p>
 									<p>Website bán hàng</p>
@@ -294,7 +294,7 @@
 								</div>
 							</div>
 							<div class="col-sm-2">
-								<img src="img/aodep.jpg" alt="">
+								<img src="/frontend/img/aodep.jpg" alt="">
 								<div class="text">
 									<p>Giá 1.000.000đ</p>
 									<p>Website bán hàng</p>
@@ -302,7 +302,7 @@
 								</div>
 							</div>
 							<div class="col-sm-2">
-								<img src="img/aodep.jpg" alt="">
+								<img src="/frontend/img/aodep.jpg" alt="">
 								<div class="text">
 									<p>Giá 1.000.000đ</p>
 									<p>Website bán hàng</p>
@@ -322,311 +322,353 @@
 		<div class="col-sm-10 col-sm-offset-1 form-info-item">
 			<h2 class="title text-center">HƠN 1000+ MẪU WEBSITES</h2>
 			<!--Box-item1-->
-			<div class="col-sm-12">
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/giay.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
+			@foreach($sanPhams as $key=>$sanPham)
+				@if($key%3==0)
+					<div class="col-sm-12">
+				@endif
+					<div class="col-sm-4 form-item">
+							<div class="col-sm-12 hovereffect">
+								<img class="img-responsive" src="{{$sanPham->anh}}" alt="">
+								<div class="overlay">
+									<div class="box-demo-info">
+										<h2>
+											<button type="">Xem Demo</button>
+										</h2>
+										<h2 class="btn-info1">
+											<button type="">Xem Chi Tiết</button>
+										</h2>
+									</div>
+									<p class="icon-links icon-contacts1">
+										<a href="#">
+											<span class="fa fa-twitter"></span>
+										</a>
+										<a href="#">
+											<span class="fa fa-instagram"></span>
+										</a>
+										<a href="#">
+											<span class="fa fa-facebook"></span>
+										</a>
+									</p>
+								</div>
 							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
+							<div class="col-sm-12 item-info">
+								<a href="">
+									<span>Giá: <strong>{{number_format($sanPham->gia,0,'','.')}} đ</strong></span>
+									<h3>{{$sanPham->ten}} </h3>
 								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/mypham.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
 							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
 						</div>
+				@if($key%3==2||$key==count($sanPhams)-1)
 					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/dochoi.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
-							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-			</div>
-			<!--Box-item1-->
-			<div class="col-sm-12">
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/giay.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
-							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/mypham.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
-							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/dochoi.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
-							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-			</div>
-			<!--Box-item1-->
-			<div class="col-sm-12">
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/giay.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
-							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/mypham.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
-							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-				<!--ITEM1-->
-				<div class="col-sm-4 form-item">
-					<div class="col-sm-12 hovereffect">
-						<img class="img-responsive" src="img/dochoi.jpg" alt="">
-						<div class="overlay">
-							<div class="box-demo-info">
-								<h2>
-									<button type="">Xem Demo</button>
-								</h2>
-								<h2 class="btn-info1">
-									<button type="">Xem Chi Tiết</button>
-								</h2>
-							</div>
-							<p class="icon-links icon-contacts1">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-instagram"></span>
-								</a>
-								<a href="#">
-									<span class="fa fa-facebook"></span>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-12 item-info">
-						<a href="">
-							<span>Giá: <strong>1.000.000 đ</strong></span>
-							<h3>Mẫu Website Shop Bán Giày </h3>
-						</a>
-					</div>
-				</div>
-			</div>
+				@endif
+
+			@endforeach
+
+			{{--<div class="col-sm-12">--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/giay.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/mypham.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/dochoi.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+			{{--</div>--}}
+			{{--<!--Box-item1-->--}}
+			{{--<div class="col-sm-12">--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/giay.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/mypham.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/dochoi.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+			{{--</div>--}}
+			{{--<!--Box-item1-->--}}
+			{{--<div class="col-sm-12">--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/giay.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/mypham.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+				{{--<!--ITEM1-->--}}
+				{{--<div class="col-sm-4 form-item">--}}
+					{{--<div class="col-sm-12 hovereffect">--}}
+						{{--<img class="img-responsive" src="/frontend/img/dochoi.jpg" alt="">--}}
+						{{--<div class="overlay">--}}
+							{{--<div class="box-demo-info">--}}
+								{{--<h2>--}}
+									{{--<button type="">Xem Demo</button>--}}
+								{{--</h2>--}}
+								{{--<h2 class="btn-info1">--}}
+									{{--<button type="">Xem Chi Tiết</button>--}}
+								{{--</h2>--}}
+							{{--</div>--}}
+							{{--<p class="icon-links icon-contacts1">--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-twitter"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-instagram"></span>--}}
+								{{--</a>--}}
+								{{--<a href="#">--}}
+									{{--<span class="fa fa-facebook"></span>--}}
+								{{--</a>--}}
+							{{--</p>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+					{{--<div class="col-sm-12 item-info">--}}
+						{{--<a href="">--}}
+							{{--<span>Giá: <strong>1.000.000 đ</strong></span>--}}
+							{{--<h3>Mẫu Website Shop Bán Giày </h3>--}}
+						{{--</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+			{{--</div>--}}
 			<div class="view-more">
 				<button> Xem thêm <i class="glyphicon glyphicon-chevron-right"></i></button>
 			</div>
@@ -641,32 +683,32 @@
 							<h4>Đội ngũ của Team Maru với tiêu chí làm trên mong đợi của khách hàng!</h4>
 						</div>
 						<div class="team-img">
-							<img src="images/line.png" alt="">
+							<img src="/frontend/images/line.png" alt="">
 						</div>
 						<div class="col-sm-3">
 							<div class="box-info team-box">
-								<img src="images/ngan.jpg" alt="img1">
+								<img src="/frontend/images/ngan.jpg" alt="img1">
 								<h4>Nguyễn Thị Thúy Ngân</h4>
 								<p><strong>Vị trí: </strong> Designer</p>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="box-info team-box">
-								<img src="images/ngan.jpg" alt="img2">
+								<img src="/frontend/images/ngan.jpg" alt="img2">
 								<h4>Nguyễn Thị Thúy Ngân</h4>
 								<p><strong>Vị trí: </strong> Designer</p>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="box-info team-box">
-								<img src="images/ngan.jpg" alt="img3">
+								<img src="/frontend/images/ngan.jpg" alt="img3">
 								<h4>Nguyễn Thị Thúy Ngân</h4>
 								<p><strong>Vị trí: </strong> Designer</p>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="box-info team-box">
-								<img src="images/ngan.jpg" alt="img4">
+								<img src="/frontend/images/ngan.jpg" alt="img4">
 								<h4>Nguyễn Thị Thúy Ngân</h4>
 								<p><strong>Vị trí: </strong> Designer</p>
 							</div>
@@ -675,7 +717,7 @@
 				</div>
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 sm-left-margin">
-				<img src="img/bg_h2.png" alt="">
+				<img src="/frontend/img/bg_h2.png" alt="">
 				<div class="col-sm-12">
 					<h3>Chúng tôi hỗ trợ khách hàng 7 ngày trong tuần 24/24</h3>
 					<span>Hotline: (Mr.Dung) 0912345678</span> - <span>(Mrs.Thao) 094567890</span>

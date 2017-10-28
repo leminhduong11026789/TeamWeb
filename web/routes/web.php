@@ -74,3 +74,7 @@ Route::patch('admin/moTaSanPhams/{moTaSanPhams}', ['as'=> 'admin.moTaSanPhams.up
 Route::delete('admin/moTaSanPhams/{moTaSanPhams}', ['as'=> 'admin.moTaSanPhams.destroy', 'uses' => 'MoTaSanPhamController@destroy']);
 Route::get('admin/moTaSanPhams/{moTaSanPhams}', ['as'=> 'admin.moTaSanPhams.show', 'uses' => 'MoTaSanPhamController@show']);
 Route::get('admin/moTaSanPhams/{moTaSanPhams}/edit', ['as'=> 'admin.moTaSanPhams.edit', 'uses' => 'MoTaSanPhamController@edit']);
+
+
+
+Route::get('/trang-chu', ['as'=> 'trang-chu', 'uses' => 'Frontend\SanPhamController@index']);

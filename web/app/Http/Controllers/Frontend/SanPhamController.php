@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreateSanPhamRequest;
 use App\Http\Requests\UpdateSanPhamRequest;
 use App\Models\MoTaSanPham;
@@ -34,15 +35,8 @@ class SanPhamController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $search=$request->search;
-        if(!empty($search)){
-            $sanPhams=$this->sanPhamRepository->findByField('ten','LIKE','%'.$search['name'].'%',['*'],true,10);
-        }
-        else{
-            $sanPhams = $this->sanPhamRepository->paginate(10);
-        }
-
-        return view('backend.san_phams.index')
+        $sanPhams = $this->sanPhamRepository->all();
+        return view('frontend.san_pham.index')
             ->with('sanPhams', $sanPhams);
     }
 

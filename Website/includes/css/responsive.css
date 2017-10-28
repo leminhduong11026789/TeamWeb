@@ -1,0 +1,40 @@
+@media screen and (min-width: 1200px) {
+	.navbar {
+		min-height: 40px;
+		background: #ff6a00;
+	}
+	.navbar-form {
+		margin-top: 0px; 
+		margin-bottom: 0px; 
+		float: right;
+	}
+	.form-control {
+		height: 32px;
+		font-size: 13px;
+	}
+	.navbar-nav>li>a {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		color: #fff;
+		font-size: 13px;
+		text-transform: capitalize;
+		display: inline-block;
+		font-weight: bold;
+		font-family: arial;
+
+	}
+	.btn-default {
+		height: 32px;
+		margin-top: 6px;
+		border-radius: 2px;
+		background: #01a701;
+		border: 2px solid green;
+	}
+	#searchInput {
+		width: 227px;
+		margin-top: 6px;
+		border-radius: 2px;
+		border: 2px solid green;
+	}
+
+}
