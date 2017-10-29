@@ -26,6 +26,7 @@ class SanPham extends Model
         'danh_muc_id',
         'url',
         'anh',
+        'anh_demo',
         'slug'
     ];
 
@@ -39,6 +40,7 @@ class SanPham extends Model
         'danh_muc_id' => 'integer',
         'url' => 'string',
         'anh' => 'string',
+        'anh_demo' => 'string',
         'slug' => 'string'
     ];
 

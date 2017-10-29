@@ -82,6 +82,13 @@ class SanPhamController extends AppBaseController
             $input['anh'] = '/uploads/image_sanpham/'.$imageName;
         }
 
+        if (!empty($input['anh_demo'])) {
+            $imageName = time().'.'.transText($request->anh_demo->getClientOriginalName(),'-');
+            $request->anh_demo->move(public_path('uploads/image_sanpham'), $imageName);
+            $request->anh_demo = $imageName;
+            $input['anh_demo'] = '/uploads/image_sanpham/'.$imageName;
+        }
+
 
         $sanPham = $this->sanPhamRepository->create($input);
         $allDescription = $request->description;
@@ -183,6 +190,17 @@ class SanPhamController extends AppBaseController
             $request->anh = $imageName;
             $input['anh'] = '/uploads/image_sanpham/'.$imageName;
         }
+
+        if($request->anh_demo==null){
+            $input['anh_demo'] = $sanPham->anh_demo;
+        }
+        else{
+            $imageName = time().'.'.transText($request->anh_demo->getClientOriginalName(),'-');
+            $request->anh_demo->move(public_path('uploads/image_sanpham'), $imageName);
+            $request->anh_demo = $imageName;
+            $input['anh_demo'] = '/uploads/image_sanpham/'.$imageName;
+        }
+
         $allDescription = $request->description;
 
         $removeAllDescription = $this->moTaSanPhamRepository->findByField('san_pham_id','=',$sanPham->id,['*'],false);

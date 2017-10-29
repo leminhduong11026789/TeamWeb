@@ -20,7 +20,7 @@
             <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
             <div>
                 <span class="btn default btn-file">
-                    <span class="fileinput-new"> @lang('messages.san_pham_select_image') </span>
+                    <span class="fileinput-new"> Chọn ảnh tiêu đề </span>
                     <span class="fileinput-exists"> @lang('messages.change') </span>
                     @if(isset($sanPham))
                         @if(isset($sanPham->anh))
@@ -37,6 +37,40 @@
         </div>
     </div>
 </div>
+<!-- Image Title Field -->
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-6">
+        <div class="fileinput fileinput-new" data-provides="fileinput">
+            <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                @if(isset($sanPham))
+                    @if(isset($sanPham->anh_demo))
+                        <img style="width: 200px; height: 150px;" src="{!! $sanPham->anh_demo !!}">
+                    @else
+                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                    @endif
+                @endif
+            </div>
+            <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
+            <div>
+                <span class="btn default btn-file">
+                    <span class="fileinput-new"> Chọn ảnh xem demo </span>
+                    <span class="fileinput-exists"> @lang('messages.change') </span>
+                    @if(isset($sanPham))
+                        @if(isset($sanPham->anh_demo))
+                            <input name="anh_demo" type="file" href="{{$sanPham->anh_demo}}">
+                        @else
+
+                        @endif
+                    @else
+                        {!! Form::file('anh_demo',[]) !!}
+                    @endif
+                </span>
+                <a href="javascript:;" class="btn default fileinput-exists" data-dismiss="fileinput"> @lang('messages.delete') </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Url Field -->
 <div class="form-group col-sm-6">
