@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Frontend;
+namespace  App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\AppBaseController;
-use App\Http\Requests\CreateSanPhamRequest;
 use App\Http\Requests\UpdateSanPhamRequest;
 use App\Models\MoTaSanPham;
 use App\Repositories\DanhMucSanPhamRepository;
@@ -36,86 +35,27 @@ class SanPhamController extends AppBaseController
     public function index(Request $request)
     {
         $sanPhams = $this->sanPhamRepository->all();
-        return view('frontend.san_pham.index')
+        $categories = $this->danhMucSanPhamRepository->all();
+//        dd('abc');
+        $numberInline = 3;
+        $numberInpage = 3;
+        return view('frontend.san_pham.index',compact('categories','numberInline','numberInpage'))
             ->with('sanPhams', $sanPhams);
     }
 
-    /**
-     * Show the form for creating a new SanPham.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        $categories=$this->danhMucSanPhamRepository->all();
-        return view('backend.san_phams.create',compact('categories'));
-    }
-
-    /**
-     * Store a newly created SanPham in storage.
-     *
-     * @param CreateSanPhamRequest $request
-     *
-     * @return Response
-     */
-    public function store(CreateSanPhamRequest $request)
-    {
-        $input = $request->all();
-        $category_ids = $request->category_ids;
-        if($category_ids){
-            $input['danh_muc_id'] = $category_ids[0];
-        }
-        else{
-            Flash::error('Chon Danh Muc');
-            return back()->withInput();
-        }
-        if (!empty($input['anh'])) {
-            $imageName = time().'.'.transText($request->anh->getClientOriginalName(),'-');
-            $request->anh->move(public_path('uploads/image_sanpham'), $imageName);
-            $request->anh = $imageName;
-            $input['anh'] = '/uploads/image_sanpham/'.$imageName;
-        }
-
-
-        $sanPham = $this->sanPhamRepository->create($input);
-        $allDescription = $request->description;
-        foreach ($allDescription as $order=>$content){
-            $mota = new MoTaSanPham();
-            $mota->san_pham_id = $sanPham->id;
-            $mota->content = $content;
-            $mota->order = $order;
-            $mota->save();
-        }
-        Flash::success(__('messages.san_pham_saved'));
-        if($input['save']==='save_edit'){
-            return redirect(route('admin.sanPhams.edit', $sanPham->id));
-        }
-        elseif ($input['save']==='save_new'){
-            return redirect(route('admin.sanPhams.create'));
-        }
-        else{
-            return redirect(route('admin.sanPhams.index'));
-        }
-    }
-
-    /**
-     * Display the specified SanPham.
-     *
-     * @param  int $id
-     *
-     * @return Response
-     */
     public function show($id)
     {
         $sanPham = $this->sanPhamRepository->findWithoutFail($id);
 
         if (empty($sanPham)) {
-            Flash::error('San Pham not found');
-
-            return redirect(route('admin.sanPhams.index'));
+            return redirect(route('trang-chu'));
         }
+        $numberInline = 3;
+        $numberInpage = 3;
+        $relations = $this->sanPhamRepository->findByField('danh_muc_id','=',$sanPham->danh_muc_id,['*'],false);
 
-        return view('backend.san_phams.show')->with('sanPham', $sanPham);
+        $descriptions = $this->moTaSanPhamRepository->orderBy('order','asc')->findByField('san_pham_id','=',$sanPham->id,['*'],false);
+        return view('frontend.san_pham.chitiet',compact('numberInpage','numberInline','relations','descriptions'))->with('sanPham', $sanPham);
     }
 
     /**

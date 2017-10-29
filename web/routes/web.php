@@ -78,5 +78,5 @@ Route::get('admin/moTaSanPhams/{moTaSanPhams}/edit', ['as'=> 'admin.moTaSanPhams
 
 
 Route::get('/trang-chu', ['as'=> 'trang-chu', 'uses' => 'Frontend\SanPhamController@index']);
-//Route::get('/san-pham/{sanPhams}', ['as'=> 'sanpham.show', 'uses' => 'Frontend\SanPhamController@show']);
-//Route::get('/danh-muc-san-pham/{danhmuc}', ['as'=> 'danhmuc.show', 'uses' => 'Frontend\DanhMucSanPhamController@show']);
+Route::get('/san-pham/{sanPhams}', ['as'=> 'sanpham.show', 'uses' => 'Frontend\SanPhamController@show']);
+Route::get('/danh-muc-san-pham/{danhmuc}', ['as'=> 'danhmuc.index', 'uses' => 'Frontend\DanhMucSanPhamController@index']);
